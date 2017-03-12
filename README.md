@@ -7,11 +7,11 @@ Hello Surescripts, the project I chose to submit was for my Databases class.  Th
 ### Author Tab 
 ![alt tag](https://github.com/DaveMSchmitz/SurescriptsInternship/blob/master/Images/author1.png)
 ![alt tag](https://github.com/DaveMSchmitz/SurescriptsInternship/blob/master/Images/author2.png)
-  
+<br>  
 ### Category Tab 
 ![alt tag](https://github.com/DaveMSchmitz/SurescriptsInternship/blob/master/Images/cat1.png)
 ![alt tag](https://github.com/DaveMSchmitz/SurescriptsInternship/blob/master/Images/cat2.png)
-  
+<br>  
 ### Category Tab 
 ![alt tag](https://github.com/DaveMSchmitz/SurescriptsInternship/blob/master/Images/pub1.png)
 ![alt tag](https://github.com/DaveMSchmitz/SurescriptsInternship/blob/master/Images/pub2.png)
