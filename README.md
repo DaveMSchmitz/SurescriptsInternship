@@ -30,6 +30,21 @@ This class is responsible for all of the content on the panel. When making a Sea
 https://github.com/DaveMSchmitz/SurescriptsInternship/blob/master/Surescripts/code/SearchPanel.java
 
 ### HenryDAO.java
-this class is the Database Access Object (DAO) and is responsible for recieving requests from the SearchPanel and sending queries to the Database. When making a HenryDAO it will try to connect to the server.  Then it will stay connected unitl the user terminates the session.
-#### getList()
-getList() is responsible for loading the first ComboBox on the SearchPanel.  It retrieves the tye type requested (EX. author name, category of book, or publisher of book), submits a query for all of that type in the database, and returns a list of strings of that type.
+This class is the Database Access Object (DAO) and is responsible for recieving requests from the SearchPanel and sending queries to the Database. When making a HenryDAO it will try to connect to the server.  Then it will stay connected unitl the user terminates the session.
+#### getList(int type)
+getList(int type) is responsible for loading the first ComboBox on the SearchPanel.  It retrieves the tye type requested (EX. author name, category of book, or publisher of book), submits a query for all of that type in the database, and returns a list of strings of that type. After it is done SearchPanel will then ask for the first book that the other has with getBookData(String data, int type).
+
+#### getBookData(String data, int type)
+getBookData(String data, int type) is responsible for populating the information at the bottom of the SearchPanel (EX. title, author(s), price, etc). Using data (book title), it will query the database for the book and create a book with the information needed.
+
+https://github.com/DaveMSchmitz/SurescriptsInternship/blob/master/Surescripts/code/HenryDAO.java
+
+### Book.java
+This class is responsible for being a data structure that can hold all of the information that a book would need (EX. book code, title, locations that it is at, etc). It is very basic with having variables that you can set and get.  The different cases are for author and location.  Since their can be more than one author per book, this holds a list of authors.
+
+https://github.com/DaveMSchmitz/SurescriptsInternship/blob/master/Surescripts/code/Book.java
+
+### Location.java
+This class is responsible for being a data structure that can hold location data. It stores the name of the location and the amount of books that the location has on hand of that book.
+
+https://github.com/DaveMSchmitz/SurescriptsInternship/blob/master/Surescripts/code/Location.java
