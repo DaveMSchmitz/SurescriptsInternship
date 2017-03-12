@@ -28,3 +28,8 @@ https://github.com/DaveMSchmitz/SurescriptsInternship/blob/master/Surescripts/co
 This class is responsible for all of the content on the panel. When making a SearchPanel you need to give it a type (EX. Author, Category, Publisher) and the Database Access Object. With the type, when ever it asks the Database Access Object for book information, it will pass it this type so that the DAO will know what information to give back. The main way to search for books is with ComboBoxes so when one of the ComboBoxes is switched it will ask the DAO for type and then load the defaults.
 
 https://github.com/DaveMSchmitz/SurescriptsInternship/blob/master/Surescripts/code/SearchPanel.java
+
+### HenryDAO.java
+this class is the Database Access Object (DAO) and is responsible for recieving requests from the SearchPanel and sending queries to the Database. When making a HenryDAO it will try to connect to the server.  Then it will stay connected unitl the user terminates the session.
+#### getList()
+getList() is responsible for loading the first ComboBox on the SearchPanel.  It retrieves the tye type requested (EX. author name, category of book, or publisher of book), submits a query for all of that type in the database, and returns a list of strings of that type.
